@@ -1,0 +1,29 @@
+author: Scott (scotthernandez-at-gmail)
+description: IR Library for esp8266
+type: lib
+version: 0.1
+
+sources:
+  - src
+  - ${IRremoteESP8266_path}/src
+
+filesystem:
+  - fs
+config_schema:
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/arduino-compat
+
+modules:
+  - origin: https://github.com/markszabo/IRremoteESP8266
+
+tags:
+  - js
+  - c
+
+skeleton_version: 2017-05-18
+
+#enable after fixed, and remove "defined" from IRsend.h:15
+cdefs:
+  TEST: false
+  UNIT_TEST: false
