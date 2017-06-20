@@ -1,5 +1,5 @@
 #include <stdbool.h>
-#include "fw/src/mgos_app.h"
+#include "main.h"
 
 bool mgos_arduino_ir_init(void) {
   return true;
